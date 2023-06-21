@@ -75,7 +75,11 @@ On Debian based host systems, the `sudo apt-get -y install bluez` command will i
 
 Some systems may not come with Bluetooth and require a USB adapter. Installing an adapter for the first time may require multiple restarts for the device to be fully recognized.
 
-If you experience an unreliable Bluetooth connection, installing a short USB extension cable between your Bluetooth adapter and your Home Assistant server may improve reliability.
+__IMPORTANT NOTE:__ If you experience an unreliable Bluetooth (or Zigbee) connection, installing a short USB extension cable between your Bluetooth adapter and your Home Assistant server may improve reliability. This can especially result from USB3 port interferences (please see this [Intel Whitepaper](https://www.usb.org/sites/default/files/327216.pdf) for more information) intefering with 2.4 GHz signals which is the frequency e.g. of Bluetooth and Zigbee communication. The extension cable needs to be properly shielded which is often not the case for extension cables declaring that they're shielded. So you may have to find out doing your own testing.
+
+### USB extension cables with working shielding according to customer reviews / HA user experience
+
+[DELOCK Cable USB 2.0-A Plug > Jack ShapeCable](https://www.amazon.de/gp/product/B00N1R8AXI/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1) . Available in other stores too: Use Delock item number 83497 for search online.  
 
 ### Known working high-performance adapters
 
